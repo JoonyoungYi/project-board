@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/base_card_bg_default"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:paddingTop="30sp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/main_activity_login_title"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/explain_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/main_activity_login_explain"
+            android:textColor="#424242"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:minHeight="0dp"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="12sp"
+            android:paddingBottom="12sp"
+            android:background="@drawable/main_activity_login_button_bg"
+            android:textColor="#424242"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+</LinearLayout>

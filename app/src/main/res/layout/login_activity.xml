@@ -1,0 +1,104 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kr.ac.kaist.bab.view.LoginActivity">
+
+    <!-- Login progress -->
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#008BD8"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <!-- Login form -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#008BD8">
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/logo" />
+
+
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:hint="@string/prompt_portal_username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/password_et"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:textColor="#3A3A3A"
+                android:textColorHint="#666666"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:hint="@string/prompt_portal_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/sign_in_button"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:textColor="#3A3A3A"
+                android:textColorHint="#666666"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#3A3A3A"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/action_login"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</merge>

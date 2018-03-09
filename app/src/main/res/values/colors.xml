@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="board_actionbar">#0288d1</color>
+    <color name="bab_actionbar_strip">#ffff00</color>
+
+    <color name="board_card_image_container_bg">#F5F5F5</color>
+    <color name="board_card_background">#FFFFFF</color>
+    <color name="board_card_shadow">#DADADA</color>
+    <color name="board_card_shadow_end">#22DADADA</color>
+    <color name="board_textcolor_strong">#2B2B2B</color>
+    <color name="board_textcolor_weak">#8A8A8A</color>
+
+</resources>

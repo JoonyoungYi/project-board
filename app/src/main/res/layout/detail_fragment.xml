@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#E6E6E6">
+
+    <!-- Error View -->
+    <include
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/base_error_view" />
+
+    <!-- listview -->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="visible" />
+</LinearLayout>

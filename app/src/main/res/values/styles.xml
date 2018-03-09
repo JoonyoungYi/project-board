@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!-- -->
+
+    <style name="Theme.Board" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/board_actionbar</item>
+        <item name="colorAccent">@color/board_actionbar</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/Theme.Board.ActionBar</item>
+    </style>
+
+    <style name="Theme.Board.ActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- -->
+    <style name="Theme.Board.Black" parent="@style/Theme.Board">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#AA000000</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+
+    <!-- -->
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>
